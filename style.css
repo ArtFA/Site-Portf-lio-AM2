@@ -1,0 +1,729 @@
+body{
+	background: #FFFFFF;
+	height: 100%;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+/* Declaração de fontes--------------------------------*/
+@font-face {
+    font-family: "mesquite"; 
+    src: url("fonts/mesquite.otf"); 
+}
+
+@font-face {
+    font-family: "daun"; 
+    src: url("fonts/daunpenh.ttf");
+}
+
+@font-face {
+    font-family: "caslon"; 
+    src: url("fonts/Caslon Pro.ttf"); 
+}
+/*-----------------------------------------------------*/
+
+/*Background*/
+.background-image{
+	background-image:url("imagens/welcome6.png");
+	width: 100vw;
+	height: 100vh;
+	left: -10px;
+	position: fixed;
+	background-repeat: no-repeat;
+	z-index: 1;
+}
+
+/*Header e seus elementos---------------------------*/
+.header{
+ position: fixed;
+ width: 100vw;
+ height: 120px;
+ background-color: #f1d6ba;
+ z-index: 3;
+}
+
+.menu-icon{
+	display: block;
+	position: relative;
+	left: 50%;
+    width: 85px;
+    margin-left: -60px; 
+    margin-top: 0px;
+
+
+}
+.menu-icon-spin{
+	display: block;
+	position: absolute;
+	left: 50%;
+    width: 150px;
+    height: 150px;
+    margin-left: -60px; 
+    margin-top: -155px;
+
+
+}
+
+.menu-icon-spin:hover {
+	width: 150px;
+    height: 150px;
+	-webkit-animation:spin 4s linear infinite;
+    
+
+}
+
+.mini-header{ /*Barrinha branca só pra ajudar no contraste do header*/
+ position: fixed;
+ width: 100vw;
+ height: 130px;
+ background-color: #FFFFFF;
+ z-index: 2;
+}
+/*--------------------------------------------------*/
+
+/*Animações no background*--------------------------------*/
+.boat{
+	z-index: 1;
+	position: fixed;
+	top: 60%;
+	margin-top: 40px;
+	margin-left: 280px;
+
+	animation: boatMove 1s alternate linear infinite;
+}
+
+.bard{
+	z-index: 1;
+	position: fixed;
+	top: 60%;
+	margin-top: 130px;
+	margin-left: 70px;
+
+	animation: dragMove 1s alternate linear infinite;
+}
+
+.dragon{
+	z-index: 1;
+	position: fixed;
+	top: 50%;
+	left: 60%;
+	margin-top: 240px;
+	margin-left: 40px;
+
+	animation: dragMove 1s alternate linear infinite;
+}
+
+.chimera{
+	z-index: 1;
+	position: fixed;
+	top: 50%;
+	right: 10%;
+	margin-top: 50px;
+	margin-right: -110px;
+
+	animation: dragMove 1s alternate linear infinite;
+}
+
+.creature{
+	z-index: 1;
+	position: fixed;
+	top: 20%;
+	right: 30%;
+	margin-top: 70px;
+	margin-right: -20px;
+
+	animation: dragMove 1s alternate linear infinite;
+}
+
+.lilBoat{
+	z-index: 1;
+	position: fixed;
+	top: 30%;
+	right: 60%;
+	margin-top: 100px;
+	margin-right: -70px;
+
+	animation: boatMove 1s alternate linear infinite;
+
+}
+/*--------------------------------------------------------*/
+
+/*Tela de Bem-vindo--------------------*/
+.welcome-section{
+	background-color: #FFFFFF;
+	width: 100%;
+	height: 820px;
+	margin: 0px;
+	margin-top: -20px;
+ 	padding: 0px;
+}
+
+.welcome-box{
+	position: relative;
+	z-index: 1;
+}
+
+.welcome-text{
+	position: relative;
+	margin-top: -610px;
+	text-align: center;
+	font-size: 50px;
+	font-family: "daun";
+	color: #4b391b;
+}
+
+#welcome-text h1{
+
+	font-size: 65px;
+	font-style: normal;
+	font-weight: normal;
+	font-stretch: normal;
+	margin-top: 0px;
+	margin-bottom: 10px;
+}
+
+#welcome-text h2{
+
+	font-size: 30px;
+	font-style: normal;
+	font-weight: normal;
+	font-stretch: normal;
+	text-decoration: underline;
+	text-shadow: 2px 2px #caae7d;
+	margin-top: 0px;
+	
+}
+/*-------------------------------------*/
+
+/*Tela de Menu---------------------------------------------*/
+.menu-box{
+	background:url("imagens/menu4.png") no-repeat center;
+	width: 100vw;
+	height: 100vh;
+	position: relative;
+	margin-top: -50px;
+	margin-left: -25px;
+	z-index: 1;
+}
+
+a {
+	text-decoration: none;
+	color: #4b391b;
+}
+
+.text-up {
+
+	font-size: 110px;
+	font-family: "mesquite";
+	text-decoration: none;
+	text-shadow: 0px 3px #CCFFFF;
+	position: absolute;
+	left: 645px;
+	top: 70px;
+
+}
+.text-up:hover {
+	font-size: 113px;
+
+}
+
+.text-left {
+
+	font-size: 110px;
+	font-family: "mesquite";
+	text-decoration: none;
+	text-shadow: 2px 2px #CCFFFF;
+
+	position: absolute;
+	left: 370px;
+	top: 340px;
+
+}
+.text-left:hover {
+	font-size: 113px;
+	
+
+}
+
+.text-right {
+
+	font-size: 110px;
+	font-family: "mesquite";
+	text-decoration: none;
+	text-shadow: -2px 2px #CCFFFF;
+
+	position: absolute;
+	left: 950px;
+	top: 340px;
+
+}
+.text-right:hover {
+	font-size: 113px;
+
+}
+
+.text-down {
+
+	font-size: 110px;
+	font-family: "mesquite";
+	text-decoration: none;
+	text-shadow: 0px -3px #CCFFFF;
+
+	position: absolute;
+	left: 615px;
+	top: 590px;
+
+}
+.text-down:hover {
+	font-size: 113px;
+
+}
+/*-------------------------------------------------------*/
+
+/*Tela sobre o autor---------------------------------------------*/
+.about-box{
+	background:url("imagens/sobre.png") no-repeat center;
+	align-content: center;
+	width: 100vw;
+	height: 100vh;
+	position: relative;
+	margin-top: 0px;
+	margin-left: 10px;
+
+	z-index: 1;
+}
+
+.about-text{
+	position: relative;
+	border-top: 0px;
+	left: 40%;
+	top: 18%;
+	text-align: justify;
+	font-size: 40px;
+	font-family: "daun";
+	color: #4b391b;
+}
+
+.description-text{
+	position: relative;
+	border-top: 0px;
+	left: 15%;
+	margin-top: -60px; 
+	margin-left: -25px;
+	text-align: justify;
+	font-size: 36px;
+	font-family: "daun";
+	color: #4b391b;
+}
+/*---------------------------------------------------------------*/
+
+/*Tela de Projetos-----------------------------------------------*/
+.projects{
+	background:url("imagens/projetos2.png") no-repeat center;
+	margin-top: 100px;
+	position: relative;
+	width: 100vw;
+	height: 1700px;
+	z-index: 1;
+}
+
+#projects h1{
+
+	font-style: normal;
+	font-weight: normal;
+	font-stretch: normal;
+
+	font-family: "daun";
+	font-size: 120px;
+	color: #4b391b;
+
+	position: relative;
+	text-align: center;
+	top: 5%;
+
+}
+
+.op{ /*operação plantinhas*/
+
+	position: relative;
+	float: left;
+	margin-left: 100px;
+	margin-top: -50px;
+	text-align: center;
+	font-size: 30px;
+	font-family: "caslon";
+	color: #4b391b;
+
+}
+
+#op h1{
+
+	font-style: normal;
+	font-weight: normal;
+	font-stretch: normal;
+	margin-bottom: -40px;
+
+	font-family: "caslon";
+	font-size: 60px;
+
+	position: relative;
+	text-align: center;
+	top: 5%;
+
+}
+
+.op{
+
+	position: relative;
+	float: left;
+	margin-left: 100px;
+	margin-top: -50px;
+	text-align: center;
+	font-size: 30px;
+	font-family: "caslon";
+	color: #4b391b;
+
+}
+
+#op h1{
+
+	font-style: normal;
+	font-weight: normal;
+	font-stretch: normal;
+	margin-bottom: -40px;
+
+	font-family: "caslon";
+	font-size: 60px;
+
+	position: relative;
+	text-align: center;
+	top: 5%;
+
+}
+.op-button{
+	position: relative;
+	text-align: center;
+	vertical-align: middle;
+	width: 230px;
+	height: 70px;
+	line-height: 70px;
+	margin-top: 40px;
+	margin-left: 155px;
+	font-size: 30px;
+	z-index: 1;
+}
+.op-button:hover {
+
+	font-size: 32px;
+}
+
+.si{ /*space invaders*/
+
+	position: relative;
+	float: right;
+	margin-right: 100px;
+	margin-top: 450px;
+	text-align: center;
+	font-size: 30px;
+	font-family: "caslon";
+	color: #4b391b;
+
+}
+
+#si h1{
+
+	font-style: normal;
+	font-weight: normal;
+	font-stretch: normal;
+	margin-bottom: -40px;
+
+	font-family: "caslon";
+	font-size: 60px;
+
+	position: relative;
+	text-align: center;
+	top: 5%;
+
+}
+
+.si-button{
+	position: relative;
+	text-align: center;
+	vertical-align: middle;
+	width: 230px;
+	height: 70px;
+	line-height: 80px;
+	margin-top: -10px;
+	margin-left: 200px;
+	font-size: 30px;
+	z-index: 1;
+}
+.si-button:hover {
+
+	font-size: 32px;
+}
+
+
+.mami{ /*blog de mami*/
+
+	position: relative;
+	float: left;
+	margin-left: 90px;
+	margin-top: 630px;
+	text-align: center;
+	font-size: 30px;
+	font-family: "caslon";
+	color: #4b391b;
+
+}
+
+#mami h1{
+
+	font-style: normal;
+	font-weight: normal;
+	font-stretch: normal;
+	margin-bottom: -40px;
+
+	font-family: "caslon";
+	font-size: 60px;
+
+	position: relative;
+	text-align: center;
+	top: 5%;
+
+}
+
+.mami-button{
+	position: relative;
+	text-align: center;
+	vertical-align: middle;
+	width: 230px;
+	height: 70px;
+	line-height: 80px;
+	margin-top: -15px;
+	margin-left: 165px;
+	font-size: 30px;
+	z-index: 1;
+
+}
+.mami-button:hover {
+
+	font-size: 32px;
+}
+/*---------------------------------------------------------------*/
+
+/*Tela de Projetos futuros---------------------------------------*/
+.futuro-box{
+	background:url("imagens/futuro.png") no-repeat center;
+	margin-top: -80px;
+	position: relative;
+	width: 100vw;
+	height: 868px;
+	z-index: 1;
+}
+
+#futuro-box h1{
+
+	font-style: normal;
+	font-weight: normal;
+	font-stretch: normal;
+
+	font-family: "daun";
+	font-size: 120px;
+	color: #4b391b;
+
+	position: relative;
+	text-align: center;
+	top: 11%;
+
+}
+
+#futuro-box h2{
+
+	font-style: normal;
+	font-weight: normal;
+	font-stretch: normal;
+
+	font-family: "daun";
+	font-size: 36px;
+	color: #4b391b;
+
+	position: relative;
+	text-align: center;
+	margin-top: -50px;
+}
+
+.futuro-text{
+	position: relative;
+	margin-left: 0px;
+	margin-top: 0px;
+	top: 25%;
+	text-align: center;
+	font-size: 60px;
+	font-family: "daun";
+	color: #4b391b;
+}
+/*--------------------------------------------------------------*/
+
+/*Tela de Contato-----------------------------------------------*/
+.contato-box{
+	background:url("imagens/contato1.png") no-repeat center;
+	margin-top: -120px;
+	position: relative;
+	width: 100vw;
+	height: 868px;
+	z-index: 1;
+}
+
+#contato-box h1{
+
+	font-style: normal;
+	font-weight: normal;
+	font-stretch: normal;
+
+	font-family: "daun";
+	font-size: 120px;
+	color: #4b391b;
+
+	position: relative;
+	text-align: center;
+	top: 11%;
+
+}
+
+#contato-box h2{
+
+	font-style: normal;
+	font-weight: normal;
+	font-stretch: normal;
+
+	font-family: "daun";
+	font-size: 36px;
+	color: #4b391b;
+
+	position: relative;
+	text-align: center;
+	margin-top: -100px;
+}	
+
+.contato-mail { /*div do formolário*/
+  position: relative;
+  left: 20%;
+  top:5%;
+  width: 350px;
+  z-index: 1;
+}
+
+input, textarea {
+  	width: 100%;
+	padding: 12px;
+	border: 1px solid #4b3a1c;
+	border-radius: 2px;
+	box-sizing: border-box;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	resize: vertical;
+	background-color: #FFFFFF;
+
+}
+
+label{
+	
+	text-align: right;
+	font-family: "daun";
+	font-size: 36px;
+	color: #4b3a1c;
+	margin-right: 1em;
+	margin-left: -50px;
+
+
+}
+
+.textarea{
+  height: 120px;
+}
+
+.button { /*butao enviar*/
+  background-color: #8e8e8e;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+
+}
+
+.button:hover {
+  background-color: #4b3a1c;
+}
+
+.social-box{ /*div das redes sociais*/
+	position: relative;
+	bottom: 25%;
+	margin-top: -100px;
+}
+
+.fb-icon{
+	position: relative;
+	left: 60%;
+	bottom: 30%;
+	margin-left: 50px;
+}
+
+.tw-icon{
+	position: relative;
+	left: 60%;
+	bottom: 30%;
+	margin-left: 200px;
+	margin-top: -85px;
+}
+
+.gm-icon{
+	position: relative;
+	left: 60%;
+	bottom: 30%;
+	margin-left: 50px;
+	margin-top: 50px;
+}
+
+.insta-icon{
+	position: relative;
+	left: 60%;
+	bottom: 30%;
+	margin-left: 200px;
+	margin-top: -85px;
+}
+/*--------------------------------------------------------------*/
+
+/*Declaração de Animações---------------------------------------*/
+@keyframes boatMove{ /*animação dos barquinhos*/
+	0%{
+		-webkit-transform: rotate(-10deg); 
+		transform:rotate(-10deg); 
+	}
+
+	100%{
+		-webkit-transform: rotate(10deg); 
+		transform:rotate(10deg); 
+	}
+}
+
+@keyframes dragMove{ /*animação das criaturas do background*/
+
+	0%{
+		-webkit-transform: rotate(-3deg); 
+		transform:rotate(-3deg); 
+	}
+
+	100%{
+		-webkit-transform: rotate(3deg); 
+		transform:rotate(3deg);
+	}
+
+}
+
+@-webkit-keyframes spin{ /*animação do ícone no header*/
+	100%{ 
+		-webkit-transform: rotate(360deg); 
+	} 
+}
+/*--------------------------------------------------------------*/
