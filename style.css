@@ -172,6 +172,13 @@ body{
 	color: #4b391b;
 }
 
+#welcome-text strong{
+	font-style: normal;
+	font-weight: normal;
+	font-stretch: normal;
+	color: #caae7d;
+}
+
 #welcome-text h1{
 
 	font-size: 65px;
